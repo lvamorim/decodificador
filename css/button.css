@@ -1,0 +1,51 @@
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 420px) {
+  .controls {
+    flex-direction: row;
+  }
+}
+
+button {
+  border: 1px solid var(--dark-blue);
+  border-radius: var(--round);
+  cursor: pointer;
+  padding: 1rem;
+}
+
+button:not(.encrypt, .decrypt) {
+  width: 100%;
+}
+
+.primary, .secondary {
+  flex-grow: 1;
+}
+
+.primary {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+  
+.secondary {
+  background-color: transparent;
+}
+
+.primary.disabled, .secondary.disabled {
+  cursor: default;
+}
+  
+.primary.disabled {
+  background-color: var(--dark-blue-contrast);
+}
+  
+.secondary.disabled {
+  background-color: var(--light-blue-contrast);
+}
+
+.confirm {
+  background-color: var(--dark-blue-contrast);
+}

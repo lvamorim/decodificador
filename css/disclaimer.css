@@ -1,0 +1,11 @@
+.disclaimer {
+  color: var(--black);
+  font-size: var(--s-font);
+  opacity: var(--opacity);
+}
+
+.disclaimer::before {
+  content: url('/img/bi_exclamation-circle-fill.svg');
+  vertical-align: sub;
+  margin-right: .5rem;
+}

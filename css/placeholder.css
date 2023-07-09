@@ -1,0 +1,35 @@
+::placeholder {
+  opacity: 1;
+}
+
+.placeholder {
+  text-align: center;
+}
+
+.placeholder img {
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  .placeholder {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.placeholder-title {
+  color: var(--gray-contrast);
+}
+
+@media (max-width: 991px) {
+  .placeholder-title {
+    margin-top: 0;
+  }
+}
+
+.placeholder-description {
+  color: var(--gray);
+  margin-bottom: 0;
+}

@@ -1,0 +1,20 @@
+:root {
+  --dark-blue: #0A3871;
+  --dark-blue-contrast: #2d5b94;
+  --light-blue: #F3F5FC;
+  --light-blue-contrast: #D8DFE8;
+  --gray: #495057;
+  --gray-contrast: #343A40;
+  --black: #000000;
+  --white: #FFFFFF;
+
+  --font: 'Inter', sans-serif;
+  --b-font: 700;
+  --s-font: .75rem;
+  --m-font: 1.5rem;
+  --l-font: 2rem;
+
+  --round: 1rem;
+  --opacity: .7;
+  --margin-left: 15%;
+}

@@ -1,0 +1,24 @@
+textarea {
+  border: none;
+  resize: none;
+  outline: none;
+  min-height: 30vh;
+}
+
+.input {
+  background-color: transparent;
+  font-size: var(--l-font);
+  flex-grow: 1;
+}
+
+.output {
+  color: var(--gray);
+  cursor: default;
+  font-size: var(--m-font);
+  height: 100%;
+  margin-bottom: 1rem;
+}
+
+.output::selection {
+  user-select: none;
+}

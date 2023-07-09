@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decodificador</title>
+  <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/_variables.css">
+  <link rel="stylesheet" href="css/_reset.css">
+  <link rel="stylesheet" href="css/section.css">
+  <link rel="stylesheet" href="css/textarea.css">
+  <link rel="stylesheet" href="css/disclaimer.css">
+  <link rel="stylesheet" href="css/placeholder.css">
+  <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="css/alert.css">
+</head>
+<body>
+  <main>
+    <section class="input-column">
+      <header>
+        <img src="img/logo.svg" alt="Logo Alura">
+        <h1>Decodificador</h1>
+      </header>
+      <textarea class="input" name="input" placeholder="Digite seu texto" data-field="input"></textarea>
+      <div>
+        <p class="disclaimer">Apenas letras minúsculas e sem acento. <strong>Use vogais.</strong></p>
+        <div class="controls">
+          <button class="primary encrypt" data-button="encrypt">Criptografar</button>
+          <button class="secondary decrypt" data-button="decrypt">Descriptografar</button>
+        </div>
+      </div>
+    </section>
+    <section class="output-column">
+      <div class="placeholder">
+        <img src="img/placeholder.svg" alt="Placeholder">
+        <h2 class="placeholder-title">Nenhuma mensagem encontrada</h2>
+        <p class="placeholder-description">Digite um texto que você deseja criptografar ou descriptografar.</p>
+      </div>
+      <div class="output-container hidden">
+        <textarea class="output" name="output" data-field="output" readonly></textarea>
+        <div>
+          <button class="secondary" data-button="copy">Copiar</button>
+        </div>
+      </div>
+    </section>
+    <div class="alert hidden" data-alert>
+      <div class="alert-box">
+        <h2 class="alert-title" data-alert="title"></h2>
+        <p class="alert-description" data-alert="description"></p>
+        <button class="primary confirm" data-button="confirm">OK</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <span>
+      &copy;2023 — Desenvolvido por
+      <a href="https://github.com/lvamorim">LV</a>
+    </span>
+  </footer>
+  <script type="module" src="js/index.js"></script>
+</body>
+</html>
