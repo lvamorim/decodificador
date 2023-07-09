@@ -5,7 +5,7 @@
 }
 
 .disclaimer::before {
-  content: url('/img/bi_exclamation-circle-fill.svg');
+  content: url('../img/bi_exclamation-circle-fill.svg');
   vertical-align: sub;
   margin-right: .5rem;
 }
